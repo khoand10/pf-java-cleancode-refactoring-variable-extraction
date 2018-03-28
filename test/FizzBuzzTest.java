@@ -4,10 +4,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FizzBuzzTest {
 
+    public static final String FIZZ = "Fizz";
+    public static final String BUZZ = "Buzz";
+    public static final String FIZZ_BUZZ = "FizzBuzz";
+
     @Test
     void testFizz3() {
         int number = 3;
-        String expected = "Fizz";
+        String expected = FIZZ;
 
         String result = FizzBuzz.fizzBuzz(number);
         assertEquals(expected, result);
@@ -16,7 +20,7 @@ class FizzBuzzTest {
     @Test
     void testFizz6() {
         int number = 6;
-        String expected = "Fizz";
+        String expected = FIZZ;
 
         String result = FizzBuzz.fizzBuzz(number);
         assertEquals(expected, result);
@@ -25,7 +29,7 @@ class FizzBuzzTest {
     @Test
     void testBuzz5() {
         int number = 5;
-        String expected = "Buzz";
+        String expected = BUZZ;
 
         String result = FizzBuzz.fizzBuzz(number);
         assertEquals(expected, result);
@@ -34,7 +38,7 @@ class FizzBuzzTest {
     @Test
     void testBuzz10() {
         int number = 10;
-        String expected = "Buzz";
+        String expected = BUZZ;
 
         String result = FizzBuzz.fizzBuzz(number);
         assertEquals(expected, result);
@@ -43,7 +47,7 @@ class FizzBuzzTest {
     @Test
     void testFizzBuzz15() {
         int number = 15;
-        String expected = "FizzBuzz";
+        String expected = FIZZ_BUZZ;
 
         String result = FizzBuzz.fizzBuzz(number);
         assertEquals(expected, result);
@@ -52,7 +56,7 @@ class FizzBuzzTest {
     @Test
     void testFizzBuzz30() {
         int number = 30;
-        String expected = "FizzBuzz";
+        String expected = FIZZ_BUZZ;
 
         String result = FizzBuzz.fizzBuzz(number);
         assertEquals(expected, result);

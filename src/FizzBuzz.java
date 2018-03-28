@@ -1,13 +1,18 @@
 public class FizzBuzz {
+
+    static final String FIZZBUZZ = "FizzBuzz";
+    static final String FIZZ = "Fizz";
+
     public static String fizzBuzz(int number){
-        if(number % 3 == 0 && number % 5 == 0)
-            return "FizzBuzz";
+        boolean result3True = number % 3 == 0;
+        boolean result5True = number % 5 == 0;
+        if(result3True && result5True)
+            return FIZZBUZZ;
+        if(result3True)
+            return FIZZ;
 
-        if(number % 3 == 0)
-            return "Fizz";
-
-        if(number % 5 == 0)
-            return "Buzz";
+        if(result5True)
+            return FIZZ;
 
         return number + "";
     }
